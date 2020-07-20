@@ -258,11 +258,11 @@ var app = new Vue({
               console.log(response.data)
               this.output = response.data
             } else {
-              this.$Message.error('excute error')
+              console.log('excute error')
             }
           })
       } else {
-        this.$Message.error('command is empty')
+        console.log('command is empty')
       }
     }
   },
