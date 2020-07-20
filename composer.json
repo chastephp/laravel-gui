@@ -1,0 +1,29 @@
+{
+  "name": "chastephp/laravel-gui",
+  "description": "a laravel gui.",
+  "keywords": [
+    "laravel",
+    "laravel-gui"
+  ],
+  "require": {
+    "php": "^7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "ChastePhp\\LaravelGUI\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ChastePhp\\LaravelGUI\\ServiceProvider"
+      ]
+    }
+  },
+  "authors": [
+    {
+      "name": "widdy",
+      "email": "kingwide@foxmail.com"
+    }
+  ]
+}
