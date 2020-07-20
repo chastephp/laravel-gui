@@ -244,9 +244,8 @@ var app = new Vue({
     },
     handleCommandExecute () {
       if (this.inputCommand) {
-        // const loading = this.$Message.loading({content: 'Loading', duration: 2})
 
-        fetch('/gui/execute', {
+        fetch('/{{config('gui.route.prefix')}}/execute', {
           method: 'POST', // or 'PUT'
           body: JSON.stringify({command: this.inputCommand}), // data can be `string` or {object}!
           headers: new Headers({
@@ -259,11 +258,11 @@ var app = new Vue({
               console.log(response.data)
               this.output = response.data
             } else {
-              this.$Message.error('命令执行错误')
+              this.$Message.error('excute error')
             }
           })
       } else {
-        this.$Message.error('命令不能为空')
+        this.$Message.error('command is empty')
       }
     }
   },
