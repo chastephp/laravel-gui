@@ -1,6 +1,7 @@
 {
   "name": "chastephp/laravel-gui",
   "description": "a laravel gui.",
+  "license": "MIT",
   "keywords": [
     "laravel",
     "laravel-gui"
