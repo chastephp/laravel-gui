@@ -5,7 +5,7 @@ a simple laravel artisan gui
 ## Install
 
 ```bash
-composer require chastephp/laravel-gui
+composer require --dev chastephp/laravel-gui
 ```
 
 
